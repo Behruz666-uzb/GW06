@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white p-6">
+
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4">
+
+  <!-- Одежда (big left) -->
+  <div class="md:col-span-4 relative rounded-3xl overflow-hidden h-[420px]">
+    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/20"></div>
+    <span class="absolute bottom-4 left-4 text-white text-2xl font-medium">одежда</span>
+  </div>
+
+  <!-- Обувь (center) -->
+  <div class="md:col-span-5 relative rounded-3xl overflow-hidden h-[420px]">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/20"></div>
+    <span class="absolute bottom-4 left-4 text-white text-2xl font-medium">обувь</span>
+  </div>
+
+  <!-- Right column -->
+  <div class="md:col-span-3 flex flex-col gap-4 h-[420px]">
+
+    <div class="relative rounded-3xl overflow-hidden h-1/3">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/35"></div>
+      <span class="absolute inset-0 flex items-center justify-center text-white text-xl font-medium">аксессуары</span>
+    </div>
+
+    <div class="relative rounded-3xl overflow-hidden h-1/3">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/35"></div>
+      <span class="absolute inset-0 flex items-center justify-center text-white text-xl font-medium">сумки</span>
+    </div>
+
+    <div class="relative rounded-3xl overflow-hidden h-1/3">
+      <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/35"></div>
+      <span class="absolute inset-0 flex items-center justify-center text-white text-xl font-medium">для спорта</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
