@@ -1,62 +1,79 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categories</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-white p-6">
+<body>
+    
 
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4">
+    <div class="relative w-full h-screen bg-gray-100 font-sans overflow-hidden">
+        <div class="bg-white border-b border-gray-200 py-2 flex justify-center items-center gap-4 text-[10px] uppercase tracking-widest">
+          <button class="text-gray-400">❮</button>
+          <span>Гарантия лучшей цены</span>
+          <button class="text-gray-400">❯</button>
+        </div>
+      
+        <nav class="absolute top-12 left-0 w-full z-10 px-8 flex justify-between items-center text-white mix-blend-difference">
+          <ul class="flex gap-6 text-sm font-light">
+            <li><a href="#" class="hover:opacity-70 transition">Одежда</a></li>
+            <li><a href="#" class="hover:opacity-70 transition">Обувь</a></li>
+            <li><a href="#" class="hover:opacity-70 transition">Аксессуары</a></li>
+            <li><a href="#" class="hover:opacity-70 transition">Сумки</a></li>
+            <li><a href="#" class="hover:opacity-70 transition">Товары для спорта</a></li>
+          </ul>
+      
+          <div class="text-2xl font-bold tracking-tighter">DEALER</div>
+      
+          <div class="flex gap-5 items-center">
+            <button aria-label="Favorites">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+            </button>
+            <button aria-label="Cart">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            </button>
+            <button aria-label="Search">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+          </div>
+        </nav>
+      
+        <div class="relative h-full w-full">
+          <img 
+            src="Assets/f06b6d1cae4a8ea1c7753e6518555af491f20a71.jpg" 
+            alt="Hero background" 
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          
+          <div class="relative z-10 h-full flex flex-col justify-center px-16 text-white pt-20">
+            <div class="max-w-4xl">
+              <div class="flex items-start gap-4 mb-2">
+                <h1 class="text-7xl font-bold leading-[0.9] tracking-tight uppercase">
+                  Распродажа<br/>товаров для неё
+                </h1>
+                <span class="bg-black text-white text-[10px] px-3 py-1.5 rounded-full font-medium mt-4">
+                  скидки до 90%!
+                </span>
+              </div>
+              
+              <button class="mt-10 bg-white text-black px-10 py-4 rounded-xl text-sm font-medium hover:bg-gray-200 transition">
+                Перейти в каталог
+              </button>
+            </div>
+          </div>
+      
+          <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2 w-1/3">
+            <div class="h-[2px] flex-1 bg-white"></div>
+            <div class="h-[2px] flex-1 bg-white/30"></div>
+            <div class="h-[2px] flex-1 bg-white/30"></div>
+            <div class="h-[2px] flex-1 bg-white/30"></div>
+            <div class="h-[2px] flex-1 bg-white/30"></div>
+          </div>
+        </div>
+      </div>
 
-  <!-- Одежда (big left) -->
-  <div class="md:col-span-4 relative rounded-3xl overflow-hidden h-[420px]">
-    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/20"></div>
-    <span class="absolute bottom-4 left-4 text-white text-2xl font-medium">одежда</span>
-  </div>
-
-  <!-- Обувь (center) -->
-  <div class="md:col-span-5 relative rounded-3xl overflow-hidden h-[420px]">
-    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/20"></div>
-    <span class="absolute bottom-4 left-4 text-white text-2xl font-medium">обувь</span>
-  </div>
-
-  <!-- Right column -->
-  <div class="md:col-span-3 flex flex-col gap-4 h-[420px]">
-
-    <div class="relative rounded-3xl overflow-hidden h-1/3">
-      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/35"></div>
-      <span class="absolute inset-0 flex items-center justify-center text-white text-xl font-medium">аксессуары</span>
-    </div>
-
-    <div class="relative rounded-3xl overflow-hidden h-1/3">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/35"></div>
-      <span class="absolute inset-0 flex items-center justify-center text-white text-xl font-medium">сумки</span>
-    </div>
-
-    <div class="relative rounded-3xl overflow-hidden h-1/3">
-      <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/35"></div>
-      <span class="absolute inset-0 flex items-center justify-center text-white text-xl font-medium">для спорта</span>
-    </div>
-
-  </div>
-</div>
-
-<div>
-    <h1 class="font-extrabold text-5xl ml-42 ">Новинки</h1>
-    <div class="flex justify-center gap-5 mt-10 ">
-    <img src="Карточка товара.png" alt="">
-    <img src="Карточка товара (1).png" alt="">
-    <img src="Карточка товара (2).png" alt="">
-    <img src="Карточка товара (3).png" alt="">
-    </div>
-</div>
 
 </body>
 </html>
